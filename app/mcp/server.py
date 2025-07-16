@@ -31,7 +31,7 @@ def run_server(host='127.0.0.1', port=5000):
     server = socket(AF_INET, SOCK_STREAM)
     server.bind((host, port))
     server.listen()
-    print(f"🚗 MCP Server rodando em {host}:{port}")
+    print(f"MCP Server rodando em {host}:{port}")
     while True:
         conn, addr = server.accept()
         Thread(target=handle_client, args=(conn, addr), daemon=True).start()

@@ -22,7 +22,7 @@ def main():
 
             results = client.search(**filters)
             if results:
-                print(f"\n🔎 {len(results)} carro(s) encontrado(s):")
+                print(f"\n {len(results)} carro(s) encontrado(s):")
                 for car in results:
                     print(
                         f" • {car['brand']} {car['model']} ({car['year']}), "
@@ -32,10 +32,10 @@ def main():
                     )
                 print()
             else:
-                print("\n❌ Nenhum carro encontrado.\n")
+                print("\nNenhum carro encontrado.\n")
 
         except (KeyboardInterrupt, EOFError):
-            print("\n👋 Saindo. Até a próxima!")
+            print("\nSaindo. Até a próxima!")
             break
 
 if __name__ == "__main__":

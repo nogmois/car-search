@@ -2,6 +2,14 @@
 
 Projeto de busca de carros via protocolo TCP (MCP) com CLI interativa e Docker.
 
+## 📑 ÍNDICE
+
+- [Clonar o repositório](#🔗-clonar-o-repositório)
+- [Configuração via terminal (sem Docker)](#⚙️-configuração-via-terminal-sem-docker)
+- [Configuração via Docker](#🐳-configuração-via-docker)
+- [Testes](#9-executar-testes)
+- [Estrutura do Projeto](#📦-estrutura-do-projeto)
+
 ## 🔗 Clonar o repositório
 
 ```bash

@@ -1,24 +1,11 @@
 # Car Search
 
-Projeto de busca de carros via protocolo MCP.
-
-## Setup
-
-1. Crie e ative o venv:
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate   # Linux/macOS
-   .\.venv\Scripts\activate    # Windows
-   ```
-
-# Car Search
-
 Projeto de busca de carros via protocolo TCP (MCP) com CLI interativa e Docker.
 
 ## 🔗 Clonar o repositório
 
 ```bash
-git clone <URL_DO_REPO> car_search
+git clone https://github.com/nogmois/car-search.git car_search
 cd car_search
 ```
 
@@ -103,7 +90,7 @@ cd car_search
 
 1. Instale Docker e Docker Compose.
 
-2. No diretório do projeto, rode:
+2. No diretório do projeto, execute:
 
    ```bash
    docker-compose down -v      # remove containers, redes e volumes
@@ -112,10 +99,9 @@ cd car_search
 
    Isso executa:
 
-   1. `alembic stamp head`
-   2. `alembic upgrade head`
-   3. `python -m app.scripts.populate_db --number 100`
-   4. `python -m app.mcp.server --host 0.0.0.0 --port 5000`
+   1. `alembic upgrade head`
+   2. `python -m app.scripts.populate_db --number 100`
+   3. `python -m app.mcp.server --host 0.0.0.0 --port 5000`
 
 3. Para usar a CLI no host:
 

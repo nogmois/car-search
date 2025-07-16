@@ -1,0 +1,47 @@
+# Python virtual environment
+
+.venv/
+
+# Byte-compiled / optimized / DLL files
+
+**pycache**/
+\*.py\[cod]
+
+# Alembic version files (compiled)
+
+migrations/versions/\*.pyc
+
+# Environment variables
+
+.env
+.env.\*
+
+# Database files
+
+\*.sqlite3
+\*.db
+\# pytest cache and coverage reports
+.pytest\_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Editor directories and files
+
+.vscode/
+.idea/
+\*.sublime-project
+\*.sublime-workspace
+
+# OS generated files
+
+.DS\_Store
+Thumbs.db
+
+# Docker Compose override (if any)
+
+docker-compose.override.yml
+
+# Log files
+
+\*.log

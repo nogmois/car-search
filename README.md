@@ -2,22 +2,22 @@
 
 Projeto de busca de carros via protocolo TCP (MCP) com CLI interativa e Docker.
 
-## 📑 ÍNDICE
+## ÍNDICE
 
-- [Clonar o repositório](#🔗-clonar-o-repositório)
-- [Configuração via terminal (sem Docker)](#⚙️-configuração-via-terminal-sem-docker)
-- [Configuração via Docker](#🐳-configuração-via-docker)
-- [Testes](#9-executar-testes)
-- [Estrutura do Projeto](#📦-estrutura-do-projeto)
+- 📥 [Clonar o repositório](#clonar-o-repositório)
+- ⚙️ [Configuração via terminal (sem Docker)](#configuração-via-terminal-sem-docker)
+- 🐳 [Configuração via Docker](#configuração-via-docker)
+- 🧪 [Executar testes](#executar-testes)
+- 📦 [Estrutura do Projeto](#estrutura-do-projeto)
 
-## 🔗 Clonar o repositório
+## Clonar o repositório
 
 ```bash
 git clone https://github.com/nogmois/car-search.git car_search
 cd car_search
 ```
 
-## ⚙️ Configuração via terminal (sem Docker)
+## Configuração via terminal (sem Docker)
 
 1. Crie e ative o ambiente virtual:
 
@@ -94,7 +94,7 @@ cd car_search
    pytest
    ```
 
-## 🐳 Configuração via Docker
+## Configuração via Docker
 
 1. Instale Docker e Docker Compose.
 
@@ -129,7 +129,7 @@ cd car_search
    docker-compose exec app pytest
    ```
 
-## 📦 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 car_search/

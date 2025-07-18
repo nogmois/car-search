@@ -53,12 +53,12 @@ if __name__ == "__main__":
     if args.fuel_type:
         filters["fuel_type"] = args.fuel_type
 
-    print(f"🔍 Buscando carros com filtros: {filters}")
+    print(f"Buscando carros com filtros: {filters}")
     results = client.search(**filters)
 
     if not results:
         print("Nenhum carro encontrado.")
     else:
-        print(f"\n📦 {len(results)} carro(s) encontrado(s):\n")
+        print(f"\n{len(results)} carro(s) encontrado(s):\n")
         for car in results:
             print(f"- [{car['id']}] {car['brand']} {car['model']} ({car['year']}) - {car['fuel_type']} - R${car.get('price', '---')}")

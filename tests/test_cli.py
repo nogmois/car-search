@@ -2,19 +2,17 @@
 
 from app.cli.main import main
 
+# Simula uma sessão onde o usuário aperta Ctrl+D de cara
 class DummySession:
     def __init__(self, *args, **kwargs):
         pass
 
     def prompt(self, *args, **kwargs):
-        raise EOFError
+        raise EOFError  # simula "sair" logo de cara
 
 def test_cli_exit(monkeypatch):
-    # Monkeypatcha a classe PromptSession usada no módulo app.cli.main
-    monkeypatch.setattr(
-        'app.cli.main.PromptSession',
-        DummySession
-    )
+    # Substitui a PromptSession do prompt_toolkit por nossa dummy
+    monkeypatch.setattr("app.cli.main.PromptSession", DummySession)
 
-    # main() deve usar DummySession e capturar o EOFError sem crashar
+    # Só testa se o main() roda sem explodir ao receber EOF
     main()
